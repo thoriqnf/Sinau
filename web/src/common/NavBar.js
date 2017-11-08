@@ -10,6 +10,13 @@ const style = {
   borderBottom: "1px solid black"
 };
 
+const Logo = () => (
+  <h1>
+    {/* <img src="./img/sinau.png" alt="LOGO" /> */}
+    {/* <img src={require("./img/sinau.png")} /> */}
+  </h1>
+);
+
 const Home = () => (
   <nav style={style}>
     <NavLink to="/login">Login</NavLink>
