@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import {
   Col,
   Card,
@@ -11,7 +11,7 @@ import {
 import LinkToQuestion from "../atoms/LinkToQuestion";
 import LinkToProfile from "../atoms/LinkToProfile";
 
-import DATAPROFILES from "../data/questions";
+import DATAQUESTIONS from "../data/questions";
 
 const CardAnswer = props => (
   <Card
@@ -36,11 +36,9 @@ const CardAnswer = props => (
   </Card>
 );
 
-// -----------------------------------------------------------------------------
-
 const Home = () => (
   <Col xs={10}>
-    {DATA_QUESTIONS.map(question => {
+    {DATAQUESTIONS.map(question => {
       return question.answers.length > 0 && <CardAnswer question={question} />;
     })}
   </Col>

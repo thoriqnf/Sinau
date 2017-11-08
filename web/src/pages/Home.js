@@ -1,5 +1,7 @@
 import React from "react";
 
-const Home = () => <h1>Home</h1>;
+import ListOfAnswers from "../organisms/ListOfAnswers";
+
+const Home = () => <ListOfAnswers />;
 
 export default Home;
