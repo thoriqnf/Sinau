@@ -32,7 +32,7 @@ const Home = () => (
           Home
         </NavLink>
         <NavLink to="/answer">Answer</NavLink>
-        <NavLink to="/ask">Ask Question</NavLink>
+        <NavLink to="/question">Ask Question</NavLink>
       </Col>
 
       <Col xs={2}>
