@@ -6,9 +6,10 @@ import Layout from "./templates/Layout";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Answer from "./pages/Answer";
-import Question from "./pages/Question";
-import Profile from "./pages/Profile";
 
+import Question from "./pages/Question";
+
+import Profile from "./pages/Profile";
 import ListProfile from "./pages/ListProfile";
 
 const App = () => (
@@ -19,7 +20,7 @@ const App = () => (
       <Route path="/answer" component={Answer} />
       <Route path="/question/" component={Question} />
       <Route path="/profile/:id" component={Profile} />
-      <Route path="/listprofiles" component={ListProfile} />
+      <Route path="/listprofile" component={ListProfile} />
     </Layout>
   </Router>
 );

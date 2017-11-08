@@ -7,6 +7,7 @@ import DATAPROFILES from "../data/users";
 const ListProfile = () => (
   <ul>
     {DATAPROFILES.map(user => {
+      console.log(user);
       return (
         <li>
           <LinkToProfile user={user} />
