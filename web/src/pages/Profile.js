@@ -1,12 +1,12 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import { Button, Form, FormGroup, Input, Col, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
-const Logo = () => (
-  <h1>
-    <img src="./img/sinau.png" alt="LOGO" />
-  </h1>
-);
+// const Logo = () => (
+//   <h1>
+//     <img src="./img/sinau.png" alt="LOGO" />
+//   </h1>
+// );
 
 // row profile top
 const ImageProfile = () => <Col xs={3}>image profile</Col>;
