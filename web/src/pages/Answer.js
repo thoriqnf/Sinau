@@ -1,6 +1,7 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 
-const Answer = () => <h1>Answer</h1>;
+import ListOfQuestions from "../organisms/ListOfQuestions";
 
-export default Answer;
+const Home = () => <ListOfQuestions />;
+
+export default Home;
