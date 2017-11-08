@@ -12,13 +12,13 @@ const style = {
 
 const Home = () => (
   <nav style={style}>
-    <NavLink to="/welcome">Welcome</NavLink>
+    <NavLink to="/login">Login</NavLink>
     <NavLink exact to="/">
       Home
     </NavLink>
     <NavLink to="/answer">Answer</NavLink>
-    <NavLink to="/profile">Profile</NavLink>
     <NavLink to="/ask">Ask Question</NavLink>
+    <NavLink to="/profile">Profile</NavLink>
   </nav>
 );
 
