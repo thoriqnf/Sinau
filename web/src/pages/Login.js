@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // LOGO
 const Logo = () => (
   <h1>
-    <img src="../img/sinau.png" />
+    <img src="../img/sinau.png" alt="LOGO" />
   </h1>
 );
 
