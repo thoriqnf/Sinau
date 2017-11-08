@@ -3,8 +3,8 @@ import { Container } from "reactstrap";
 
 import Content from "./Content";
 
-import NavigationBar from "../common/NavBar";
-import Footer from "../common/Footer";
+import NavigationBar from "../organisms/NavBar";
+import Footer from "../organisms/Footer";
 
 const Layout = props => (
   <Container>

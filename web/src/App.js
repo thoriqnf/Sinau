@@ -9,6 +9,8 @@ import Answer from "./pages/Answer";
 import Question from "./pages/Question";
 import Profile from "./pages/Profile";
 
+import ListProfile from "./pages/ListProfile";
+
 const App = () => (
   <Router>
     <Layout>
@@ -16,7 +18,8 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/answer" component={Answer} />
       <Route path="/question/" component={Question} />
-      <Route path="/profile/" component={Profile} />
+      <Route path="/profile/:id" component={Profile} />
+      <Route path="/listprofiles" component={ListProfile} />
     </Layout>
   </Router>
 );

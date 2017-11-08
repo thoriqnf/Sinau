@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 import { Row, Col } from "reactstrap";
 
-// const USER = {
-//   _id: 0,
-//   name: "Administrator"
-// };
-//
+const USER = {
+  _id: 0,
+  name: "Administrator"
+};
+
 // const style = {
 //   borderBottom: "1px solid black"
 // };
@@ -36,7 +36,9 @@ const Home = () => (
       </Col>
 
       <Col xs={2}>
-        <NavLink to="/profile">Profile</NavLink>
+        <NavLink to={`/profile/${USER._id}`}>Profile</NavLink>
+        <NavLink to="/ListProfile">[P]</NavLink>
+        <NavLink to="/questions">[Q]</NavLink>
       </Col>
     </Row>
   </nav>
