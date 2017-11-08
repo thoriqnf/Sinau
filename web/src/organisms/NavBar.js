@@ -8,17 +8,6 @@ const USER = {
   name: "Administrator"
 };
 
-// const style = {
-//   borderBottom: "1px solid black"
-// };
-
-// const Logo = () => (
-//   <h1>
-//     {/* <img src="./img/sinau.png" alt="LOGO" /> */}
-//     {/* <img src={require("./img/sinau.png")} /> */}
-//   </h1>
-// );
-
 const Home = () => (
   <nav
     style={{
@@ -32,13 +21,13 @@ const Home = () => (
           Home
         </NavLink>
         <NavLink to="/answer">Answer</NavLink>
-        <NavLink to="/question">Ask Question</NavLink>
+        <NavLink to="/AskQuestion">Ask Question</NavLink>
+        <NavLink to="/ListQuestion">[Q]</NavLink>
       </Col>
 
       <Col xs={2}>
         <NavLink to={`/profile/${USER._id}`}>Profile</NavLink>
         <NavLink to="/ListProfile">[P]</NavLink>
-        <NavLink to="/questions">[Q]</NavLink>
       </Col>
     </Row>
   </nav>

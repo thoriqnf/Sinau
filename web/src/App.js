@@ -15,6 +15,7 @@ import Answer from "./pages/Answer";
 
 //question
 import Question from "./pages/Question";
+import AskQuestion from "./pages/AskQuestion";
 import ListQuestion from "./pages/ListQuestion";
 
 //profile
@@ -30,7 +31,8 @@ const App = () => (
         <Route path="/login" component={Login} />
         <Route exact path="/" component={Home} />
         <Route path="/answer" component={Answer} />
-        <Route path="/question/" component={Question} />
+        <Route path="/question" component={Question} />
+        <Route path="/askquestion/" component={AskQuestion} />
         <Route path="/listquestion/" component={ListQuestion} />
         <Route path="/profile/:id" component={Profile} />
         <Route path="/listprofile" component={ListProfile} />
