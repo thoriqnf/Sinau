@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 
 import LinkToProfile from "../atoms/LinkToProfile";
@@ -10,22 +10,25 @@ const USER = {
 };
 
 const AskBar = () => (
-  <Col xs={8}>
-    <Form>
-      <span>
-        Name {USER.name}, Title {USER.title} asked
-      </span>
-      <FormGroup>
-        <Input
-          type="text"
-          name="askText"
-          id="askText"
-          placeholder="What is your question?"
-        />
-      </FormGroup>
-      <Button>Ask Question</Button>
-    </Form>
-  </Col>
+  <Form>
+    <h6>
+      <LinkToProfile user={USER} /> asked
+    </h6>
+    <FormGroup>
+      <Input
+        type="textarea"
+        name="askTextarea"
+        id="askTextarea"
+        placeholder="What is your question?"
+        onKeyDown={e => {
+          if (e.keyCode === 13 && !e.shiftKey) {
+            e.preventDefault();
+          }
+        }}
+      />
+    </FormGroup>
+    <Button color="primary">Ask Question</Button>
+  </Form>
 );
 
 export default AskBar;

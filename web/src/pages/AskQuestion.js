@@ -1,7 +1,7 @@
 import React from "react";
 import { Col } from "reactstrap";
 
-import AskBar from "../molecules/Askbar";
+import AskBar from "../molecules/AskBar";
 
 const AskQuestion = () => (
   <Col xs={12} lg={8}>
