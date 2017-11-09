@@ -1,0 +1,7 @@
+{
+  "name": "Sinau",
+  "description": "Sinau",
+  "repository": "https://github.com/thoriqnf/Sinau",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/node.js"
+}
