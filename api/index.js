@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require("../app");
-var debug = require("debug")("backend:server");
+var app = require("./app");
+var debug = require("debug")("api:server");
 var http = require("http");
 
 /**
@@ -13,8 +13,8 @@ var http = require("http");
  */
 
 const HOST = "locahost";
-const POST = normalizePort(process.env.PORT || "3000");
-app.set("port", POST);
+const PORT = normalizePort(process.env.PORT || "3000");
+app.set("port", PORT);
 
 /**
  * Create HTTP server.
